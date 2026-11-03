@@ -1,0 +1,8 @@
+# RLBot botpack build (https://github.com/swz-git/bob): PyInstaller with question_mark.spec.
+[[config]]
+project_name = "QuestionMark"
+bot_configs = ["bot.toml"]
+
+[config.builder_config]
+builder_type = "pyinstaller"
+entry_file = "question_mark.spec"

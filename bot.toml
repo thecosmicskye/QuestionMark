@@ -1,0 +1,18 @@
+#:schema https://rlbot.org/schemas/agent.json
+[settings]
+name = "?"
+agent_id = "skye/question_mark"
+root_dir = "."
+run_command = "python bot.py"
+run_command_linux = "python3 bot.py"
+loadout_file = "loadout.toml"
+logo_file = "logo.png"
+hivemind = true
+
+[details]
+description = "4.1 million parameters: two attention layers with four heads over every car, the ball and the game state. Trained by self-play for 1.62 trillion steps, 3,420 years of driving. Fifteen times a second it picks one of 624 controller inputs and a start delay of 0 to 7 ticks."
+fun_fact = "It was only ever rewarded for scoring and conceding goals: nothing for touching the ball, collecting boost or going fast."
+source_link = "https://github.com/thecosmicskye/QuestionMark"
+developer = "Cosmic Skye"
+language = "Python (ONNX)"
+tags = ["1v1", "teamplay"]

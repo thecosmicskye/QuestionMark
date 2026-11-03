@@ -1,0 +1,1430 @@
+
+pytorch2.14.0:‚•
+E
+players
+val_3
+val_7
+val_11
+val_11slice_1node_slice_1"Slice
+;
+players
+val_13selectnode_select"Gather*
+axis 
+$
+select
+k_zeroeqnode_eq"Equal
+9
+select
+scalar_tensor_default_1eq_1	node_eq_1"Equal
+9
+select
+scalar_tensor_default_2eq_2	node_eq_2"Equal
+G
+players
+val_19
+val_23
+val_11
+val_11slice_2node_slice_2"Slice
+/
+slice_2
+k_zeroval_28node_Equal_28"Equal
+
+val_28nenode_ne"Not
+:
+ne
+val_29
+val_11
+val_31val_32node_Slice_32"Slice
+2
+val_32
+val_31getitemnode_unbind__0"Squeeze
+:
+ne
+val_11
+val_35
+val_31val_37node_Slice_37"Slice
+4
+val_37
+val_31	getitem_1node_unbind__1"Squeeze
+:
+ne
+val_35
+val_39
+val_31val_41node_Slice_41"Slice
+4
+val_41
+val_31	getitem_2node_unbind__2"Squeeze
+?
+players
+val_42select_1node_select_1"Gather*
+axis 
+/
+select_1
+k_zerogenode_ge"GreaterOrEqual
+=
+state
+val_14select_2node_select_2"Gather*
+axis 
+*
+select_2
+k_zeroeq_3	node_eq_3"Equal
++
+ge
+eq_3
+bitwise_ornode_bitwise_or"Or
+0
+dt
+k_zero
+dt_maxclampnode_Clip_150"Clip
+)
+clamp
+dtval_46node_Equal_46"Equal
+
+val_46ne_1	node_ne_1"Not
+7
+
+bitwise_or
+ne_1bitwise_or_1node_bitwise_or_1"Or
+4
+bitwise_or_1
+k_zero
+dtwhere
+node_where"Where
+<
+state
+val_8select_3node_select_3"Gather*
+axis 
+0
+select_3
+k_zeroval_47node_Equal_47"Equal
+
+val_47ne_2	node_ne_2"Not
+ 
+ne_2val_48node_Not_48"Not
+#
+getitem
+val_48gtnode_gt"And
+=
+state
+val_49select_4node_select_4"Gather*
+axis 
+0
+select_4
+k_zeroval_50node_Equal_50"Equal
+
+val_50ne_3	node_ne_3"Not
+ 
+ne_3val_51node_Not_51"Not
+$
+eq_1
+val_51gt_1	node_gt_1"And
+/
+gt
+gt_1bitwise_or_2node_bitwise_or_2"Or
+=
+state
+val_52select_5node_select_5"Gather*
+axis 
+>
+bitwise_or_2
+k_zero
+select_5where_1node_where_1"Where
+$
+where_1
+whereaddnode_add"Add
+8
+eq_1
+k_zero
+
+k_jump_maxwhere_2node_where_2"Where
+:
+bitwise_or_1
+where_2
+addwhere_3node_where_3"Where
+8
+getitem
+where_3
+k_zerowhere_4node_where_4"Where
+=
+state
+val_53select_6node_select_6"Gather*
+axis 
+0
+select_6
+k_zeroval_54node_Equal_54"Equal
+
+val_54ne_4	node_ne_4"Not
+3
+ne_4
+getitembitwise_andnode_bitwise_and"And
+;
+	getitem_1
+	getitem_2bitwise_or_3node_bitwise_or_3"Or
+2
+bitwise_or_3bitwise_notnode_bitwise_not"Not
+B
+bitwise_and
+bitwise_notbitwise_and_1node_bitwise_and_1"And
+?
+select
+scalar_tensor_default_9val_56node_Equal_56"Equal
+
+val_56ne_5	node_ne_5"Not
+=
+bitwise_and_1
+ne_5bitwise_and_2node_bitwise_and_2"And
+
+eq_2ne_6	node_ne_6"Not
+=
+bitwise_and_2
+ne_6bitwise_and_3node_bitwise_and_3"And
+6
+bitwise_or_1bitwise_not_1node_bitwise_not_1"Not
+F
+bitwise_and_3
+bitwise_not_1bitwise_and_4node_bitwise_and_4"And
+%
+where_4
+k_ticksubnode_sub"Sub
+'
+sub
+k_holdlenode_le"LessOrEqual
+;
+bitwise_and_4
+lebitwise_and_5node_bitwise_and_5"And
+8
+eq
+bitwise_and_5bitwise_or_4node_bitwise_or_4"Or
+A
+bitwise_or_4
+bitwise_or_2bitwise_or_5node_bitwise_or_5"Or
+A
+bitwise_or_5
+bitwise_or_1bitwise_or_6node_bitwise_or_6"Or
+=
+state
+val_58select_7node_select_7"Gather*
+axis 
+)
+select_7
+whereadd_1
+node_add_1"Add
+;
+bitwise_or_6
+k_zero
+add_1where_5node_where_5"Where
+?
+players
+val_59select_8node_select_8"Gather*
+axis 
+?
+players
+val_20select_9node_select_9"Gather*
+axis 
+1
+k_double_jump
+select_8sub_1
+node_sub_1"Sub
+;
+sub_1
+k_zero
+k_double_jumpclamp_1node_clamp_1"Clip
+?
+state
+val_15	select_10node_select_10"Gather*
+axis 
+1
+	select_10
+k_zeroval_64node_Equal_64"Equal
+
+val_64ne_7	node_ne_7"Not
+9
+	getitem_2
+ne_7bitwise_and_6node_bitwise_and_6"And
+
+eq_3ne_8	node_ne_8"Not
+,
+gebitwise_not_2node_bitwise_not_2"Not
+=
+ne_8
+bitwise_not_2bitwise_and_7node_bitwise_and_7"And
+F
+bitwise_and_7
+bitwise_and_6bitwise_and_8node_bitwise_and_8"And
+-
+dt
+k_zeroge_1	node_ge_1"GreaterOrEqual
+=
+bitwise_and_8
+ge_1bitwise_and_9node_bitwise_and_9"And
+?
+state
+val_66	select_12node_select_12"Gather*
+axis 
+-
+select_9
+	select_12sub_2
+node_sub_2"Sub
+#
+sub_2
+dtsub_3
+node_sub_3"Sub
+
+sub_3abs_1
+node_abs_1"Abs
+
+abs_1
+divltnode_lt"Less
+=
+bitwise_and_9
+ltbitwise_and_10node_bitwise_and_10"And
+B
+bitwise_or_1
+bitwise_and_6bitwise_or_7node_bitwise_or_7"Or
+8
+bitwise_and_10bitwise_not_3node_bitwise_not_3"Not
+G
+bitwise_or_7
+bitwise_not_3bitwise_and_11node_bitwise_and_11"And
+/
+select_9
+k_zeroclamp_2node_clamp_2"Clip
+?
+state
+val_68	select_13node_select_13"Gather*
+axis 
+'
+	select_13
+dtadd_2
+node_add_2"Add
+>
+bitwise_and_11
+clamp_2
+add_2where_6node_where_6"Where
+)
+select_8
+k_zerolt_1	node_lt_1"Less
+>
+lt_1
+bitwise_or_3bitwise_and_12node_bitwise_and_12"And
+@
+bitwise_and_12
+where_6
+clamp_1where_7node_where_7"Where
+9
+bitwise_or_4
+eq_1bitwise_or_9node_bitwise_or_9"Or
+1
+getitembitwise_not_4node_bitwise_not_4"Not
+D
+bitwise_or_9
+bitwise_not_4bitwise_or_10node_bitwise_or_10"Or
+>
+bitwise_or_10
+k_zero
+where_7where_8node_where_8"Where
+A
+players
+val_69	select_14node_select_14"Gather*
+axis 
+
+	select_14negnode_neg"Neg
+A
+players
+val_70	select_15node_select_15"Gather*
+axis 
+3
+neg
+val_31val_72node_Unsqueeze_72"	Unsqueeze
+9
+	select_15
+val_31val_74node_Unsqueeze_74"	Unsqueeze
+A
+val_72
+val_74stack
+node_stack"Concat*
+axisÿÿÿÿÿÿÿÿÿ 
+9
+	getitem_2
+val_11	unsqueezenode_unsqueeze"	Unsqueeze
+8
+	unsqueeze
+stack
+k_zerowhere_9node_where_9"Where
+G
+slice_1
+val_79
+val_82
+val_11
+val_11slice_3node_slice_3"Slice
+:
+slice_3
+scalar_tensor_default_1eq_4	node_eq_4"Equal
+<
+eq_4
+val_29
+val_11
+val_31val_90node_Slice_90"Slice
+6
+val_90
+val_31	getitem_3node_unbind_1__0"Squeeze
+<
+eq_4
+val_11
+val_35
+val_31val_94node_Slice_94"Slice
+6
+val_94
+val_31	getitem_4node_unbind_1__1"Squeeze
+?
+state
+val_95	select_16node_select_16"Gather*
+axis 
+-
+	select_16
+k_zerogt_2	node_gt_2"Greater
+?
+state
+val_76	select_17node_select_17"Gather*
+axis 
+1
+	select_17
+k_zeroval_96node_Equal_96"Equal
+
+val_96ne_9	node_ne_9"Not
+?
+state
+val_97	select_18node_select_18"Gather*
+axis 
+/
+	select_18
+k_boost_minlt_2	node_lt_2"Less
+6
+ne_9
+lt_2bitwise_and_13node_bitwise_and_13"And
+B
+	getitem_3
+bitwise_and_13bitwise_or_11node_bitwise_or_11"Or
+?
+gt_2
+bitwise_or_11bitwise_and_14node_bitwise_and_14"And
+I
+bitwise_and_14
+bitwise_not_1bitwise_and_15node_bitwise_and_15"And
+*
+	select_18
+whereadd_3
+node_add_3"Add
+?
+bitwise_and_15
+add_3
+k_zerowhere_10node_where_10"Where
+9
+where
+val_11unsqueeze_1node_unsqueeze_1"	Unsqueeze
+*
+unsqueeze_1
+k_ratesmulnode_mul"Mul
+?
+state
+val_98	select_20node_select_20"Gather*
+axis 
+=
+mul
+val_14	select_21node_select_21"Gather*
+axis 
+<
+mul
+val_8	select_22node_select_22"Gather*
+axis 
+A
+	getitem_4
+	select_21
+	select_22where_11node_where_11"Where
+-
+	select_20
+where_11add_4
+node_add_4"Add
+E
+add_4
+k_zero
+scalar_tensor_default_1clamp_3node_clamp_3"Clip
+?
+bitwise_or_1
+k_zero
+clamp_3where_12node_where_12"Where
+9
+getitem
+val_31val_103node_Unsqueeze_103"	Unsqueeze
+;
+	getitem_1
+val_31val_105node_Unsqueeze_105"	Unsqueeze
+;
+	getitem_2
+val_31val_107node_Unsqueeze_107"	Unsqueeze
+6
+eq_1
+val_31val_109node_Unsqueeze_109"	Unsqueeze
+6
+eq_2
+val_31val_111node_Unsqueeze_111"	Unsqueeze
+@
+bitwise_and_15
+val_31val_113node_Unsqueeze_113"	Unsqueeze
+>
+bitwise_or_4
+val_31val_115node_Unsqueeze_115"	Unsqueeze
+t
+val_103
+val_105
+val_107
+val_109
+val_111
+val_113
+val_115stack_1node_stack_1"Concat*
+axisÿÿÿÿÿÿÿÿÿ 
+3
+stack_1_to_copynode__to_copy"Cast*	
+to 
+B
+players
+val_116	select_23node_select_23"Gather*
+axis 
+9
+where_4
+val_31val_118node_Unsqueeze_118"	Unsqueeze
+9
+where_5
+val_31val_120node_Unsqueeze_120"	Unsqueeze
+9
+where_8
+val_31val_122node_Unsqueeze_122"	Unsqueeze
+:
+select_9
+val_31val_124node_Unsqueeze_124"	Unsqueeze
+:
+where_10
+val_31val_126node_Unsqueeze_126"	Unsqueeze
+:
+where_12
+val_31val_128node_Unsqueeze_128"	Unsqueeze
+;
+	select_23
+val_31val_130node_Unsqueeze_130"	Unsqueeze
+t
+val_118
+val_120
+val_122
+val_124
+val_126
+val_128
+val_130stack_2node_stack_2"Concat*
+axisÿÿÿÿÿÿÿÿÿ 
+/
+select_1
+k_zeroclamp_4node_clamp_4"Clip
+6
+ge
+val_11unsqueeze_2node_unsqueeze_2"	Unsqueeze
+;
+unsqueeze_2
+_to_copy_1node__to_copy_1"Cast*	
+to 
+;
+clamp_4
+val_11unsqueeze_3node_unsqueeze_3"	Unsqueeze
+6
+eq
+val_11unsqueeze_4node_unsqueeze_4"	Unsqueeze
+;
+unsqueeze_4
+_to_copy_2node__to_copy_2"Cast*	
+to 
+‡
+ones
+_to_copy
+stack_2
+where_9
+torque_z
+slice_1
+
+_to_copy_1
+unsqueeze_3
+
+_to_copy_2catnode_cat"Concat*
+axisÿÿÿÿÿÿÿÿÿ 
+A
+players
+val_14	select_24node_select_24"Gather*
+axis 
+3
+	select_24
+k_zeroval_132node_Equal_132"Equal
+!
+val_132ne_10
+node_ne_10"Not
+9
+ne_10
+val_11unsqueeze_5node_unsqueeze_5"	Unsqueeze
+9
+unsqueeze_5
+cat
+statewhere_13node_where_13"Where
+main_graph*B
+k_jump_maxJÍÌL>*Bk_double_jumpJ   ?*Bk_boost_minJÍÌÌ=*Bk_holdJ¼»;=*Bk_tickJ‰ˆ<*Bk_zeroJ    *Bk_ratesJ   @   À*.BonesJ   €?  €?  €?  €?  €?  €?  €?  €?*2Btorque_zJ                                 *Bval_3J'       *Bval_7J/       *Bval_11J       *!Bscalar_tensor_default_1J  €?*!Bscalar_tensor_default_2J  @@*Bval_19J       *Bval_23J       *!Bscalar_tensor_default_9J   @*BdivJ‰ˆˆ;*Bval_79J       *Bval_82J       *Bdt_maxJ  €>*Bval_8J       *Bval_13J       *Bval_14J        *Bval_15J       *Bval_20J       *Bval_29J        *Bval_31Jÿÿÿÿÿÿÿÿ*Bval_35J       *Bval_39J       *Bval_42J       *Bval_49J       *Bval_52J       *Bval_53J       *Bval_58J	       *Bval_59J7       *Bval_66J       *Bval_68J
+       *Bval_69J        *Bval_70J       *Bval_76J       *Bval_95J       *Bval_97J       *Bval_98J       *Bval_116J       ZÅ
+players
+
+
+8"=
+/pkg.torch.export.graph_signature.InputSpec.kind
+USER_INPUT"=
+5pkg.torch.export.graph_signature.InputSpec.persistentNone",
+!pkg.torch.onnx.original_node_nameplayersZÁ
+state
+
+
+"=
+/pkg.torch.export.graph_signature.InputSpec.kind
+USER_INPUT"=
+5pkg.torch.export.graph_signature.InputSpec.persistentNone"*
+!pkg.torch.onnx.original_node_namestateZ³
+dt
+ "=
+/pkg.torch.export.graph_signature.InputSpec.kind
+USER_INPUT"=
+5pkg.torch.export.graph_signature.InputSpec.persistentNone"'
+!pkg.torch.onnx.original_node_namedtb[
+where_13
+
+
+"?
+0pkg.torch.export.graph_signature.OutputSpec.kindUSER_OUTPUTjÁ
+
+k_jump_max
+ "9
+/pkg.torch.export.graph_signature.InputSpec.kindBUFFER"=
+5pkg.torch.export.graph_signature.InputSpec.persistentTrue"1
+!pkg.torch.onnx.original_node_nameb_k_jump_maxjÇ
+k_double_jump
+ "9
+/pkg.torch.export.graph_signature.InputSpec.kindBUFFER"=
+5pkg.torch.export.graph_signature.InputSpec.persistentTrue"4
+!pkg.torch.onnx.original_node_nameb_k_double_jumpjÃ
+k_boost_min
+ "9
+/pkg.torch.export.graph_signature.InputSpec.kindBUFFER"=
+5pkg.torch.export.graph_signature.InputSpec.persistentTrue"2
+!pkg.torch.onnx.original_node_nameb_k_boost_minj¹
+k_hold
+ "9
+/pkg.torch.export.graph_signature.InputSpec.kindBUFFER"=
+5pkg.torch.export.graph_signature.InputSpec.persistentTrue"-
+!pkg.torch.onnx.original_node_nameb_k_holdj¹
+k_tick
+ "9
+/pkg.torch.export.graph_signature.InputSpec.kindBUFFER"=
+5pkg.torch.export.graph_signature.InputSpec.persistentTrue"-
+!pkg.torch.onnx.original_node_nameb_k_tickj¹
+k_zero
+ "9
+/pkg.torch.export.graph_signature.InputSpec.kindBUFFER"=
+5pkg.torch.export.graph_signature.InputSpec.persistentTrue"-
+!pkg.torch.onnx.original_node_nameb_k_zeroj¿
+k_rates
+
+
+"9
+/pkg.torch.export.graph_signature.InputSpec.kindBUFFER"=
+5pkg.torch.export.graph_signature.InputSpec.persistentTrue".
+!pkg.torch.onnx.original_node_name	b_k_ratesj½
+ones
+
+
+"9
+/pkg.torch.export.graph_signature.InputSpec.kindBUFFER"=
+5pkg.torch.export.graph_signature.InputSpec.persistentTrue"+
+!pkg.torch.onnx.original_node_nameb_onesjÅ
+torque_z
+
+
+"9
+/pkg.torch.export.graph_signature.InputSpec.kindBUFFER"=
+5pkg.torch.export.graph_signature.InputSpec.persistentTrue"/
+!pkg.torch.onnx.original_node_name
+b_torque_zjX
+val_3
+
+
+"C
+$pkg.onnxscript.optimizer.folded_from['val_0', 'val_1', 'val_2']jX
+val_7
+
+
+"C
+$pkg.onnxscript.optimizer.folded_from['val_4', 'val_5', 'val_6']jZ
+val_11
+
+
+"D
+$pkg.onnxscript.optimizer.folded_from['val_10', 'val_8', 'val_9']jT
+scalar_tensor_default_1
+ "1
+$pkg.onnxscript.optimizer.folded_from	['val_8']jU
+scalar_tensor_default_2
+ "2
+$pkg.onnxscript.optimizer.folded_from
+['val_15']j\
+val_19
+
+
+"F
+$pkg.onnxscript.optimizer.folded_from['val_16', 'val_17', 'val_18']j\
+val_23
+
+
+"F
+$pkg.onnxscript.optimizer.folded_from['val_20', 'val_21', 'val_22']jU
+scalar_tensor_default_9
+ "2
+$pkg.onnxscript.optimizer.folded_from
+['val_55']jg
+div
+ "X
+$pkg.onnxscript.optimizer.folded_from0['k_tick', 'scalar_tensor_default_14', 'val_55']j\
+val_79
+
+
+"F
+$pkg.onnxscript.optimizer.folded_from['val_76', 'val_77', 'val_78']j\
+val_82
+
+
+"F
+$pkg.onnxscript.optimizer.folded_from['val_52', 'val_80', 'val_81']j
+dt_max
+ j
+val_8
+ j
+val_13
+ j
+val_14
+ j
+val_15
+ j
+val_20
+ j
+val_29
+
+
+j
+val_31
+
+
+j
+val_35
+
+
+j
+val_39
+
+
+j
+val_42
+ j
+val_49
+ j
+val_52
+ j
+val_53
+ j
+val_58
+ j
+val_59
+ j
+val_66
+ j
+val_68
+ j
+val_69
+ j
+val_70
+ j
+val_76
+ j
+val_95
+ j
+val_97
+ j
+val_98
+ j
+val_116
+ j
+slice_1
+
+
+j
+select
+
+
+j
+eq
+
+	
+j
+eq_1
+
+	
+j
+eq_2
+
+	
+j
+slice_2
+
+
+j
+val_28
+	
+
+j
+ne
+	
+
+j
+val_32
+	
+
+j
+getitem
+
+	
+j
+val_37
+	
+
+j
+	getitem_1
+
+	
+j
+val_41
+	
+
+j
+	getitem_2
+
+	
+j
+select_1
+
+
+j
+ge
+
+	
+j
+select_2
+
+
+j
+eq_3
+
+	
+j
+
+bitwise_or
+
+	
+j
+clamp
+ j
+val_46
+	 j
+ne_1
+	 j
+bitwise_or_1
+
+	
+j
+where
+
+
+j
+select_3
+
+
+j
+val_47
+
+	
+j
+ne_2
+
+	
+j
+val_48
+
+	
+j
+gt
+
+	
+j
+select_4
+
+
+j
+val_50
+
+	
+j
+ne_3
+
+	
+j
+val_51
+
+	
+j
+gt_1
+
+	
+j
+bitwise_or_2
+
+	
+j
+select_5
+
+
+j
+where_1
+
+
+j
+add
+
+
+j
+where_2
+
+
+j
+where_3
+
+
+j
+where_4
+
+
+j
+select_6
+
+
+j
+val_54
+
+	
+j
+ne_4
+
+	
+j
+bitwise_and
+
+	
+j
+bitwise_or_3
+
+	
+j
+bitwise_not
+
+	
+j
+bitwise_and_1
+
+	
+j
+val_56
+
+	
+j
+ne_5
+
+	
+j
+bitwise_and_2
+
+	
+j
+ne_6
+
+	
+j
+bitwise_and_3
+
+	
+j
+bitwise_not_1
+
+	
+j
+bitwise_and_4
+
+	
+j
+sub
+
+
+j
+le
+
+	
+j
+bitwise_and_5
+
+	
+j
+bitwise_or_4
+
+	
+j
+bitwise_or_5
+
+	
+j
+bitwise_or_6
+
+	
+j
+select_7
+
+
+j
+add_1
+
+
+j
+where_5
+
+
+j
+select_8
+
+
+j
+select_9
+
+
+j
+sub_1
+
+
+j
+clamp_1
+
+
+j
+	select_10
+
+
+j
+val_64
+
+	
+j
+ne_7
+
+	
+j
+bitwise_and_6
+
+	
+j
+ne_8
+
+	
+j
+bitwise_not_2
+
+	
+j
+bitwise_and_7
+
+	
+j
+bitwise_and_8
+
+	
+j
+ge_1
+	 j
+bitwise_and_9
+
+	
+j
+	select_12
+
+
+j
+sub_2
+
+
+j
+sub_3
+
+
+j
+abs_1
+
+
+j
+lt
+
+	
+j
+bitwise_and_10
+
+	
+j
+bitwise_or_7
+
+	
+j
+bitwise_not_3
+
+	
+j
+bitwise_and_11
+
+	
+j
+clamp_2
+
+
+j
+	select_13
+
+
+j
+add_2
+
+
+j
+where_6
+
+
+j
+lt_1
+
+	
+j
+bitwise_and_12
+
+	
+j
+where_7
+
+
+j
+bitwise_or_9
+
+	
+j
+bitwise_not_4
+
+	
+j
+bitwise_or_10
+
+	
+j
+where_8
+
+
+j
+	select_14
+
+
+j
+neg
+
+
+j
+	select_15
+
+
+j
+val_72
+
+
+j
+val_74
+
+
+j
+stack
+
+
+j
+	unsqueeze
+	
+
+j
+where_9
+
+
+j
+slice_3
+
+
+j
+eq_4
+	
+
+j
+val_90
+	
+
+j
+	getitem_3
+
+	
+j
+val_94
+	
+
+j
+	getitem_4
+
+	
+j
+	select_16
+
+
+j
+gt_2
+
+	
+j
+	select_17
+
+
+j
+val_96
+
+	
+j
+ne_9
+
+	
+j
+	select_18
+
+
+j
+lt_2
+
+	
+j
+bitwise_and_13
+
+	
+j
+bitwise_or_11
+
+	
+j
+bitwise_and_14
+
+	
+j
+bitwise_and_15
+
+	
+j
+add_3
+
+
+j
+where_10
+
+
+j
+unsqueeze_1
+
+
+j
+mul
+
+
+j
+	select_20
+
+
+j
+	select_21
+
+
+j
+	select_22
+
+
+j
+where_11
+
+
+j
+add_4
+
+
+j
+clamp_3
+
+
+j
+where_12
+
+
+j
+val_103
+	
+
+j
+val_105
+	
+
+j
+val_107
+	
+
+j
+val_109
+	
+
+j
+val_111
+	
+
+j
+val_113
+	
+
+j
+val_115
+	
+
+j
+stack_1
+	
+
+j
+_to_copy
+
+
+j
+	select_23
+
+
+j
+val_118
+
+
+j
+val_120
+
+
+j
+val_122
+
+
+j
+val_124
+
+
+j
+val_126
+
+
+j
+val_128
+
+
+j
+val_130
+
+
+j
+stack_2
+
+
+j
+clamp_4
+
+
+j
+unsqueeze_2
+	
+
+j
+
+_to_copy_1
+
+
+j
+unsqueeze_3
+
+
+j
+unsqueeze_4
+	
+
+j
+
+_to_copy_2
+
+
+j
+cat
+
+
+j
+	select_24
+
+
+j
+val_132
+
+	
+j
+ne_10
+
+	
+j
+unsqueeze_5
+	
+
+‚©
+0pkg.torch.export.ExportedProgram.graph_signatureô
+# inputs
+b_k_jump_max: BUFFER target='k_jump_max' persistent=True
+b_k_double_jump: BUFFER target='k_double_jump' persistent=True
+b_k_boost_min: BUFFER target='k_boost_min' persistent=True
+b_k_max_step: BUFFER target='k_max_step' persistent=True
+b_k_hold: BUFFER target='k_hold' persistent=True
+b_k_tick: BUFFER target='k_tick' persistent=True
+b_k_zero: BUFFER target='k_zero' persistent=True
+b_k_rates: BUFFER target='k_rates' persistent=True
+b_ones: BUFFER target='ones' persistent=True
+b_torque_z: BUFFER target='torque_z' persistent=True
+players: USER_INPUT
+state: USER_INPUT
+dt: USER_INPUT
+
+# outputs
+where_13: USER_OUTPUT
+‚8
+2pkg.torch.export.ExportedProgram.range_constraints{}B
+ 

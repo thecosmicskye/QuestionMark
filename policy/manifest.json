@@ -1,0 +1,386 @@
+{
+ "format": "question_mark_policy_v2",
+ "label": "? C590 1v1, C564 2v2, T208 3v3, Hybrid, argmax",
+ "players": [
+  "present",
+  "team",
+  "x",
+  "y",
+  "z",
+  "vx",
+  "vy",
+  "vz",
+  "wx",
+  "wy",
+  "wz",
+  "pitch",
+  "yaw",
+  "roll",
+  "forward.x",
+  "forward.y",
+  "forward.z",
+  "right.x",
+  "right.y",
+  "right.z",
+  "up.x",
+  "up.y",
+  "up.z",
+  "boost",
+  "demolished_timeout",
+  "is_supersonic",
+  "air_state",
+  "has_jumped",
+  "has_double_jumped",
+  "has_dodged",
+  "dodge_elapsed",
+  "dodge_dir.x",
+  "dodge_dir.y",
+  "hitbox.length",
+  "hitbox.width",
+  "hitbox.height",
+  "hitbox_offset.x",
+  "hitbox_offset.y",
+  "hitbox_offset.z",
+  "last_input.throttle",
+  "last_input.steer",
+  "last_input.pitch",
+  "last_input.yaw",
+  "last_input.roll",
+  "last_input.jump",
+  "last_input.boost",
+  "last_input.handbrake",
+  "held.throttle",
+  "held.steer",
+  "held.pitch",
+  "held.yaw",
+  "held.roll",
+  "held.jump",
+  "held.boost",
+  "held.handbrake",
+  "dodge_timeout"
+ ],
+ "max_players": 8,
+ "state_width": 29,
+ "state_columns": [
+  "valid",
+  "has_jumped",
+  "has_double_jumped",
+  "has_flipped",
+  "is_jumping",
+  "is_flipping",
+  "is_boosting",
+  "on_ground",
+  "jump_time",
+  "air_time",
+  "air_time_since_jump",
+  "flip_time",
+  "boosting_time",
+  "handbrake",
+  "last_boost",
+  "flip_rel_torque.x",
+  "flip_rel_torque.y",
+  "flip_rel_torque.z",
+  "last.throttle",
+  "last.steer",
+  "last.pitch",
+  "last.yaw",
+  "last.roll",
+  "last.jump",
+  "last.boost",
+  "last.handbrake",
+  "is_demoed",
+  "demo_respawn_timer",
+  "packet.on_ground"
+ ],
+ "ball": [
+  "present",
+  "x",
+  "y",
+  "z",
+  "vx",
+  "vy",
+  "vz",
+  "wx",
+  "wy",
+  "wz",
+  "pitch",
+  "yaw",
+  "roll"
+ ],
+ "pads": [
+  "timer",
+  "is_active",
+  "is_big"
+ ],
+ "game": [
+  "phase",
+  "seconds_elapsed",
+  "game_time_remaining",
+  "is_overtime",
+  "is_unlimited_time",
+  "blue_score",
+  "orange_score"
+ ],
+ "pad_locations": [
+  [
+   0.0,
+   -4240.0,
+   70.0
+  ],
+  [
+   -1792.0,
+   -4184.0,
+   70.0
+  ],
+  [
+   1792.0,
+   -4184.0,
+   70.0
+  ],
+  [
+   -940.0,
+   -3308.0,
+   70.0
+  ],
+  [
+   940.0,
+   -3308.0,
+   70.0
+  ],
+  [
+   0.0,
+   -2816.0,
+   70.0
+  ],
+  [
+   -3584.0,
+   -2484.0,
+   70.0
+  ],
+  [
+   3584.0,
+   -2484.0,
+   70.0
+  ],
+  [
+   -1788.0,
+   -2300.0,
+   70.0
+  ],
+  [
+   1788.0,
+   -2300.0,
+   70.0
+  ],
+  [
+   -2048.0,
+   -1036.0,
+   70.0
+  ],
+  [
+   0.0,
+   -1024.0,
+   70.0
+  ],
+  [
+   2048.0,
+   -1036.0,
+   70.0
+  ],
+  [
+   -1024.0,
+   0.0,
+   70.0
+  ],
+  [
+   1024.0,
+   0.0,
+   70.0
+  ],
+  [
+   -2048.0,
+   1036.0,
+   70.0
+  ],
+  [
+   0.0,
+   1024.0,
+   70.0
+  ],
+  [
+   2048.0,
+   1036.0,
+   70.0
+  ],
+  [
+   -1788.0,
+   2300.0,
+   70.0
+  ],
+  [
+   1788.0,
+   2300.0,
+   70.0
+  ],
+  [
+   -3584.0,
+   2484.0,
+   70.0
+  ],
+  [
+   3584.0,
+   2484.0,
+   70.0
+  ],
+  [
+   0.0,
+   2816.0,
+   70.0
+  ],
+  [
+   -940.0,
+   3308.0,
+   70.0
+  ],
+  [
+   940.0,
+   3308.0,
+   70.0
+  ],
+  [
+   -1792.0,
+   4184.0,
+   70.0
+  ],
+  [
+   1792.0,
+   4184.0,
+   70.0
+  ],
+  [
+   0.0,
+   4240.0,
+   70.0
+  ],
+  [
+   -3584.0,
+   0.0,
+   73.0
+  ],
+  [
+   3584.0,
+   0.0,
+   73.0
+  ],
+  [
+   -3072.0,
+   4096.0,
+   73.0
+  ],
+  [
+   3072.0,
+   4096.0,
+   73.0
+  ],
+  [
+   -3072.0,
+   -4096.0,
+   73.0
+  ],
+  [
+   3072.0,
+   -4096.0,
+   73.0
+  ]
+ ],
+ "controls": [
+  "throttle",
+  "steer",
+  "pitch",
+  "yaw",
+  "roll",
+  "jump",
+  "boost",
+  "handbrake"
+ ],
+ "active_phases": [
+  2,
+  3
+ ],
+ "decision_interval": 8,
+ "action_count": 4992,
+ "decision_columns": [
+  "action",
+  "start_delay_ticks",
+  "throttle",
+  "steer",
+  "pitch",
+  "yaw",
+  "roll",
+  "jump",
+  "boost",
+  "handbrake"
+ ],
+ "step": "step",
+ "matchups": {
+  "1v1": "1v1",
+  "2v2": "2v2",
+  "3v3": "3v3",
+  "1v0": "1v1",
+  "1v2": "2v2",
+  "1v3": "3v3",
+  "1v4": "3v3",
+  "1v5": "3v3",
+  "1v6": "3v3",
+  "1v7": "3v3",
+  "2v0": "2v2",
+  "2v1": "2v2",
+  "2v3": "3v3",
+  "2v4": "3v3",
+  "2v5": "3v3",
+  "2v6": "3v3",
+  "3v0": "3v3",
+  "3v1": "3v3",
+  "3v2": "3v3",
+  "3v4": "3v3",
+  "3v5": "3v3",
+  "4v0": "3v3",
+  "4v1": "3v3",
+  "4v2": "3v3",
+  "4v3": "3v3",
+  "4v4": "3v3",
+  "5v0": "3v3",
+  "5v1": "3v3",
+  "5v2": "3v3",
+  "5v3": "3v3",
+  "6v0": "3v3",
+  "6v1": "3v3",
+  "6v2": "3v3",
+  "7v0": "3v3",
+  "7v1": "3v3",
+  "8v0": "3v3"
+ },
+ "sources": {
+  "1v1": {
+   "checkpoint": "policy_1v1.pt",
+   "sha256": "97f21eb7ca86f1090730f7e74287179c9adeb07a6cecfcda52939247ff4311a0",
+   "car": "HYBRID"
+  },
+  "2v2": {
+   "checkpoint": "policy_2v2.pt",
+   "sha256": "2dfe1b59dc3c2772c64492677f1e7065251ae80cc5e05802867f459cb96e2d5e",
+   "car": "HYBRID"
+  },
+  "3v3": {
+   "checkpoint": "policy_3v3.pt",
+   "sha256": "55721e2ecf0d9518a4722a201181370e383d7baed502549ca368c5dbbd0f4ef4",
+   "car": "HYBRID"
+  }
+ },
+ "torch": "2.14.0",
+ "converted_from": {
+  "policy.pt2_sha256": "4981dab4584f6b262fe94b2dd2b57a2e7c370fa3ad31417fe5bc1a50806674a9",
+  "torch": "2.14.0",
+  "onnxruntime": "1.31.1"
+ }
+}
